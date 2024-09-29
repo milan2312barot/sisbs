@@ -1,0 +1,6 @@
+label,button,input{
+    margin: 10px;
+}
+.error-msg{
+    color: red;
+}

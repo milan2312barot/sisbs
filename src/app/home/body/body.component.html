@@ -1,0 +1,23 @@
+<form [formGroup]="teamForm" (ngSubmit)="submitForm()">
+    <div *ngIf="!numOfTeamsSelected">
+        <mat-label>Enter number of teams</mat-label>
+        <input formControlName="numOfTeams" matInput type="number" placeholder="Enter number of teams">
+        <div *ngIf="teamForm.get('numOfTeams')?.hasError('min')" class="error-msg">
+            Number of teams cannot be negative
+        </div>
+        <div>
+            <button mat-raised-button color="primary" (click)="saveNumOfTeams()">Save</button>
+        </div>
+    </div>
+
+    <div *ngIf="numOfTeamsSelected">
+        <div formArrayName="teamNames" *ngFor="let team of teamNames.controls; let i=index">
+            <mat-label>Team {{ i + 1}} Name</mat-label>
+            <input [formControl]="getTeamName(i)" matInput type="text" placeholder="Enter team name">
+        </div>
+
+        <div>
+            <button mat-raised-button color="primary" [disabled]="!teamForm.valid">Save Teams</button>
+        </div>
+    </div>
+</form>

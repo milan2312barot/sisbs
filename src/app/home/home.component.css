@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+app-header{
+    flex-basis: 5vh;
+    background-color: rgb(255, 174, 0);
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+app-body{
+    flex-basis: 80vh;
+}
+app-footer{
+    flex-basis: 10vh;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}

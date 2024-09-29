@@ -1,0 +1,10 @@
+<div *ngFor="let team of teams;let i=index">
+    <div class="container">
+        <button mat-raised-button>{{team}}</button>
+        <div class="player-item" *ngFor="let name of teamIndices;let j=index">
+            <input matInput>
+            <mat-label>Player {{ j + 1}} Name</mat-label>
+        </div>
+    </div>
+
+</div>
