@@ -12,3 +12,6 @@
 ## 1.0.3 => (29-09-2024)
 ## testing azure repo
 
+## 1.0.4 => (29-09-2024)
+## retesting azure repo
+
