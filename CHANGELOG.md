@@ -18,3 +18,5 @@
 ## 1.0.4 => (29-09-2024)
 ## one more test
 
+## 1.0.5 => (29-09-2024)
+## last trail for today
