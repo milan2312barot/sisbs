@@ -8,4 +8,3 @@
 
 ## 1.0.2 => (29-09-2024)
 ## changed CHANGELOG.md location
-
